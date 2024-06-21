@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <h1>구구단 표</h1>
+    <table border="3">
+        <script>
+            document.write("<tbody>");
+            for(var i = 1; i <= 9; i++) {
+                document.write("<tr>");
+                for(var j = 1; j <= 9; j++) {
+                    document.write("<td>" + (i * j) + "</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</tbody>");
+        </script>
+    </table>
+</body>
+</html>

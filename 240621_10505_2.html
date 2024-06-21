@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <table border="3">
+        <tr>
+            <td>섭씨온도</td>
+            <td>화씨온도</td>
+        </tr>
+        <!-- JavaScript를 사용하여 0부터 10까지의 섭씨 온도를 출력 -->
+        <script>
+            for (var celsius = 0; celsius <= 10; celsius++) {
+                var fahrenheit = celsius * 9 / 5 + 32;
+                document.write("<tr>");
+                document.write("<td>" + celsius + "</td>");
+                document.write("<td>" + fahrenheit.toFixed(2) + "</td>");
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+</html>

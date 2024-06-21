@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const randnum = Math.floor(Math.random() * 100);
+        function plus(){
+            let ans1 = document.getElementById("one");
+            let ans = parseInt(ans1);
+            if(ans != randnum){
+                if(ans > randnum){
+                    alert("큽니다");
+                }
+                if(ans < randnum){
+                    alert("작습니다");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>덧셈 계산기</h1>
+    <br>
+    <form>
+        정수 : <input type="text" id="one"><br>
+        <input type="button" value="제출" onclick="plus();">
+    </form>
+</body>
+</html>

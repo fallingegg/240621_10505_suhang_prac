@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus(){
+            let one = document.getElementById("one").value;
+            let two = document.getElementById("two").value;
+    
+            let num1 = parseInt(one);
+            let num2 = parseInt(two);
+            let sum = num1 + num2;
+            document.getElementById("res").value = sum;
+        }
+    </script>
+</head>
+<body>
+    <h1>덧셈 계산기</h1>
+    <br>
+    <form>
+        첫번째 정수 : <input type="text" id="one"><br>
+        두번째 정수 : <input type="text" id="two"><br>
+        합계 : <input type="text" id="res"><br>
+        <input type="button" value="계산" onclick="plus();">
+    </form>
+</body>
+</html>
